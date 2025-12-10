@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Film Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Om Kasar - Film Portfolio</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="job-application.html">Job Application</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="gallery page-section">
+        <div class="container">
+            <h2 class="section-title">Video & Photo Gallery</h2>
+            <p class="gallery-intro">Explore my work in video production, photography, and visual storytelling</p>
+            
+            <!-- Tab Navigation -->
+            <div class="gallery-tabs">
+                <button class="tab-btn active" data-tab="videos">Videos</button>
+                <button class="tab-btn" data-tab="scripts">Scripts</button>
+                <button class="tab-btn" data-tab="storyboards">Storyboards</button>
+            </div>
+
+            <!-- Video Gallery -->
+            <div class="gallery-content active" id="videos">
+                <div class="gallery-grid">
+                    <!-- Video 1 -->
+                    <div class="gallery-item video-item" data-video="https://drive.google.com/file/d/1ponSDBa-esqssLIa1hdmR43X3FwiqDVm/preview">
+                        <div class="gallery-image">
+                            <img src="https://media.discordapp.net/attachments/662008480525189152/1448156419068264468/image.png?ex=693a3c43&is=6938eac3&hm=ab95813e1e1e3572e81af2a9e4212150dcd8c4a6a6ad6db0a97845d07d199bea&=&format=webp&quality=lossless&width=2135&height=1128" alt="Music Video">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Music Video</h3>
+                            <p class="gallery-category">Music Video Production</p>
+                            <p class="gallery-description">Creative music video showcasing visual storytelling</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="gallery-item video-item" data-video="https://drive.google.com/file/d/1e8sYewpGuDUln_AnhBjEcYPp6WfjyIRO/preview">
+                        <div class="gallery-image">
+                            <img src="https://media.discordapp.net/attachments/662008480525189152/1448158426852229263/image.png?ex=693a3e22&is=6938eca2&hm=a2fdc9f66355662b557ba7864f98a925850296c9f003484aaf5743f9b263e742&=&format=webp&quality=lossless&width=825&height=432" alt="Interview">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Interview</h3>
+                            <p class="gallery-category">Documentary/Interview</p>
+                            <p class="gallery-description">Professional interview production and editing</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 3 -->
+                    <div class="gallery-item video-item" data-video="https://drive.google.com/file/d/1WH7Xq4Vsv5rIWgnILmUW2s3J0OGWgcSr/preview">
+                        <div class="gallery-image">
+                            <img src="https://media.discordapp.net/attachments/662008480525189152/1448158092813402253/image.png?ex=693a3dd2&is=6938ec52&hm=1fea38888dc179d862266b97d13eeeb1e59c810c82be0f2519d96910cac34f2a&=&format=webp&quality=lossless&width=1745&height=1224" alt="Simple Process">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Simple Process</h3>
+                            <p class="gallery-category">Short Film</p>
+                            <p class="gallery-description">Step-by-step process demonstration video</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Scripts Gallery -->
+            <div class="gallery-content" id="scripts">
+                <div class="scripts-container">
+                    <!-- Interview Script -->
+                    <div class="script-embed">
+                        <h3>Interview Script</h3>
+                        <iframe src="https://drive.google.com/file/d/1Bn_X-n8TrYh5t3X3_K-4XarzUWqdDhoC/preview" 
+                                width="100%" 
+                                height="600" 
+                                frameborder="0">
+                        </iframe>
+                    </div>
+
+                    <!-- Final Project Script -->
+                    <div class="script-embed">
+                        <h3>Final Project Script</h3>
+                        <iframe src="https://drive.google.com/file/d/17tpLt0warrkjdrgJc71ct2RLhWj7cqAi/preview" 
+                                width="100%" 
+                                height="600" 
+                                frameborder="0">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Storyboards Gallery -->
+            <div class="gallery-content" id="storyboards">
+                <div class="gallery-grid">
+                    <!-- Storyboard 1 -->
+                    <div class="gallery-item photo-item" data-photo="https://media.discordapp.net/attachments/662008480525189152/1448147136951750736/IMG_8166.jpg?ex=693a339e&is=6938e21e&hm=68351091107736e9e37301864cdebf59fd71228eb518611ccdee8cd468ee085b&=&format=webp">
+                        <div class="gallery-image">
+                            <img src="https://media.discordapp.net/attachments/662008480525189152/1448147136951750736/IMG_8166.jpg?ex=693a339e&is=6938e21e&hm=68351091107736e9e37301864cdebf59fd71228eb518611ccdee8cd468ee085b&=&format=webp&width=1505&height=1128" alt="Simple Process Storyboard">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Simple Process</h3>
+                            <p class="gallery-category">Storyboard</p>
+                        </div>
+                    </div>
+
+                    <!-- Storyboard 2 -->
+                    <div class="gallery-item photo-item" data-photo="https://media.discordapp.net/attachments/662008480525189152/1448147137572503723/IMG_8167.jpg?ex=693a339e&is=6938e21e&hm=5ecd8fd1074a2c17d2846b7f020b7d7e4375859e93a49a087b7268529d4f3a5b&=&format=webp">
+                        <div class="gallery-image">
+                            <img src="https://media.discordapp.net/attachments/662008480525189152/1448147137572503723/IMG_8167.jpg?ex=693a339e&is=6938e21e&hm=5ecd8fd1074a2c17d2846b7f020b7d7e4375859e93a49a087b7268529d4f3a5b&=&format=webp&width=1505&height=1128" alt="Music Video Storyboard">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Music Video</h3>
+                            <p class="gallery-category">Storyboard</p>
+                        </div>
+                    </div>
+
+                    <!-- Storyboard 3 -->
+                    <div class="gallery-item photo-item" data-photo="https://media.discordapp.net/attachments/662008480525189152/1448147138080018554/IMG_8168.jpg?ex=693a339e&is=6938e21e&hm=e3cf3d6d0534f33911637337d63cd0990f75b40600bc80a24019844e8ae5dd53&=&format=webp">
+                        <div class="gallery-image">
+                            <img src="https://media.discordapp.net/attachments/662008480525189152/1448147138080018554/IMG_8168.jpg?ex=693a339e&is=6938e21e&hm=e3cf3d6d0534f33911637337d63cd0990f75b40600bc80a24019844e8ae5dd53&=&format=webp&width=1505&height=1128" alt="Music Video Storyboard (2)">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Music Video (2)</h3>
+                            <p class="gallery-category">Storyboard</p>
+                        </div>
+                    </div>
+
+                    <!-- Storyboard 4 -->
+                    <div class="gallery-item photo-item" data-photo="https://media.discordapp.net/attachments/662008480525189152/1448147138809954314/IMG_8169.jpg?ex=693a339f&is=6938e21f&hm=97f81e28c67effdd2a6d875d3872692ed9fcc9a3347dcd1b6c703878612eba2d&=&format=webp">
+                        <div class="gallery-image">
+                            <img src="https://media.discordapp.net/attachments/662008480525189152/1448147138809954314/IMG_8169.jpg?ex=693a339f&is=6938e21f&hm=97f81e28c67effdd2a6d875d3872692ed9fcc9a3347dcd1b6c703878612eba2d&=&format=webp&width=1505&height=1128" alt="Music Video Storyboard (3)">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Final Project</h3>
+                            <p class="gallery-category">Storyboard</p>
+                        </div>
+                    </div>
+
+                    <!-- Storyboard 5 -->
+                    <div class="gallery-item photo-item" data-photo="https://media.discordapp.net/attachments/662008480525189152/1448147139287846912/IMG_8170.jpg?ex=693a339f&is=6938e21f&hm=53ac480a13d20043abcb1029945c3b7459a576a8e858c351719bc06db2d236dd&=&format=webp">
+                        <div class="gallery-image">
+                            <img src="https://media.discordapp.net/attachments/662008480525189152/1448147139287846912/IMG_8170.jpg?ex=693a339f&is=6938e21f&hm=53ac480a13d20043abcb1029945c3b7459a576a8e858c351719bc06db2d236dd&=&format=webp&width=1505&height=1128" alt="Final Project Storyboard">
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Final Project (2)</h3>
+                            <p class="gallery-category">Storyboard</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="modal" id="videoModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <iframe id="videoFrame" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photo Modal -->
+    <div class="modal" id="photoModal">
+        <div class="modal-content photo-modal-content">
+            <span class="close-modal" id="closePhotoModal">&times;</span>
+            <img id="photoModalImage" src="" alt="Full size photo">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
