@@ -63,15 +63,32 @@ tabButtons.forEach(button => {
 const videoModal = document.getElementById('videoModal');
 const videoFrame = document.getElementById('videoFrame');
 const closeVideoModal = videoModal.querySelector('.close-modal');
+const modalWatchBtn = document.getElementById('modalWatchBtn');
+const modalLinkBtn = document.getElementById('modalLinkBtn');
 
 // Add click event to video items directly
 document.querySelectorAll('.video-item').forEach(item => {
     item.addEventListener('click', () => {
         const videoUrl = item.getAttribute('data-video');
         videoFrame.src = videoUrl;
+        
+        // Extract Google Drive file ID from the preview URL
+        const fileIdMatch = videoUrl.match(/\/file\/d\/([a-zA-Z0-9-_]+)\//);
+        const fileId = fileIdMatch ? fileIdMatch[1] : null;
+        const driveLink = fileId ? `https://drive.google.com/file/d/${fileId}/view` : videoUrl;
+        
+        // Update the link button
+        modalLinkBtn.href = driveLink;
+        
         videoModal.style.display = 'block';
         document.body.style.overflow = 'hidden';
     });
+});
+
+// Watch Now button - just ensures the iframe is playing
+modalWatchBtn.addEventListener('click', () => {
+    // The iframe is already displaying, this just focuses attention
+    videoFrame.focus();
 });
 
 closeVideoModal.addEventListener('click', () => {
